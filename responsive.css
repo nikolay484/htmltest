@@ -1,0 +1,36 @@
+@media screen and (max-width:768px) {
+    header {
+        flex-direction: column;
+        height: inherit;
+        align-items: initial;
+        position: initial;
+    }
+    header ul {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin: 26px 0 20px 0;
+        flex-direction: column;
+    }
+    header .blog {
+        margin: 26px auto 15px auto;
+        justify-content: center;
+        align-items: initial;
+    }
+
+    section.frame {
+        flex-direction: column;
+    }
+    section.frame .content {
+        margin: 0;
+    }
+    main > section.frame > img {
+        margin: 0 auto;
+    }
+    .card_develop {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}

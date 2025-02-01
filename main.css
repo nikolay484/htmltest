@@ -8,12 +8,14 @@
 }
 
 main {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 0 auto;
 }
 
 header {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 86px;
     background: #EFF0F3;
     box-shadow: 4px 6px 13px 0 rgba(215, 215, 215, 0.25);
@@ -98,7 +100,8 @@ main > header > ul > li:nth-last-child(1) a {
 /*--------------------section------------------*/
 
 .frame {
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     height: 900px;
     background: #EFF0F3;
     display: flex;
@@ -295,19 +298,20 @@ main > section.frame_develop > div.wrapper_card_develop > div.title_link > p.see
     justify-content: flex-end;
     align-items: center;
     gap: 80px;
-    width: 1440px;
+    max-width: 1440px;
+    width: 100%;
     margin: 80px auto 80px auto;
 }
 
 .featured {
     display: flex;
     width: 1252px;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 auto;
-
+    justify-content: space-between;
 }
 
+div.card {
+    padding: 20px;
+}
 div.card > img {
     width: 260px;
     height: 198px;
@@ -327,10 +331,20 @@ div.card > h3 {
 .wrapper{
     display: flex;
     flex-direction: column;
-    gap: 30px;
+    width: 1252px;
 }
 
+.name_and_link {
+    display: flex;
+    height: 35px;
+    padding: 2px 0 3px 0;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+}
 .dasten {
+    padding-left: 2px;
+    padding-right: 2px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -350,15 +364,7 @@ div.featured > div.card > div.dasten > div {
 
 }
 
-.name_and_link {
-    display: flex;
-    width: 1252px;
-    height: 35px;
-    padding: 2px 0 3px 0;
-    justify-content: space-between;
-    align-items: center;
-    flex-shrink: 0;
-}
+
 
 .text_article {
     color: #2B2C34;
@@ -478,15 +484,12 @@ div.name_and_link > p.category_link > svg {
 /*subscribe section-----------------------------------*/
 .subscribe_section {
     display: inline-flex;
-    padding: 58px 372px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
     background: #EFF0F3;
-
+    width: 100%;
 }
 
 .form_section {
+    margin: 58px auto;
     width: 696px;
     height: 337px;
     background: #EFF0F3;
@@ -552,26 +555,6 @@ div.name_and_link > p.category_link > svg {
     width: 444px;
 }
 
-.button_form_subscribe {
-    display: flex;
-    height: 67px;
-    padding: 20px 23px 19px 23px;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    border: none;
-    color: #FFFFFE;
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    text-transform: capitalize;
-    border-radius: 8px;
-    background: #6246EA;
-    cursor: pointer;
-    width: 145px;
-}
 
 /*footer-------------------------------------------------*/
 footer {
@@ -588,11 +571,10 @@ footer {
 .section_footer {
     width: 1249px;
     height: 245px;
-    margin: 70px 96px 50px 95px;
+    margin: 70px auto 50px auto;
     display: flex;
     gap: 160px;
     justify-content: space-between;
-
 }
 
 .info {
@@ -645,7 +627,6 @@ footer {
     line-height: normal;
     color: #6246EA;
     cursor: pointer;
-;
 }
 
 .dasten_blog_info {
@@ -653,20 +634,15 @@ footer {
     align-items: flex-end;
 }
 
-.dasten_content{
-    display: grid;
-    gap: 95px;
-    width: 805px;
-    height: 245px;
-    grid-template-columns: repeat(4,1fr);
+.dasten_content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
-.contact{
-    width: 129px;
+.contact {
     height: 245px;
     flex-direction: column;
     display: flex;
-    gap: 25px;
-
 }
 .paragraph_info{
     display: flex;
@@ -678,7 +654,6 @@ footer {
     font-weight: 400;
     line-height: normal;
     color: #2B2C34;
-
 }
 
 
@@ -690,7 +665,7 @@ footer {
     font-weight: 700;
     line-height: normal;
     text-transform: uppercase;
-    width: 159px;
+    margin-bottom: 25px;
 }
 
 .paragraph_info{
